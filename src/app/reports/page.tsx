@@ -54,8 +54,8 @@ export default function AdminReportsPage() {
   return (
     <div className="bg-background min-h-screen">
       {/* Top header */}
-      <div className="bg-table-header text-primary mb-0 rounded-t-lg p-4">
-        <h1 className="text-lg font-semibold">User Reports</h1>
+      <div className="bg-blue-600 text-white mb-0 rounded-t-lg p-4">
+        <h1 className="text-xl font-semibold">Reports</h1>
       </div>
 
       {/* Table area */}
