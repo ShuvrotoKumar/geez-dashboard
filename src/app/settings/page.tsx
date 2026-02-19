@@ -9,11 +9,11 @@ const settingsOptions = [
     title: "Change Password",
     path: "/settings/change-password",
   },
-  {
-    id: "faq",
-    title: "Frequently Asked Questions",
-    path: "/settings/faq",
-  },
+  // {
+  //   id: "faq",
+  //   title: "Frequently Asked Questions",
+  //   path: "/settings/faq",
+  // },
   {
     id: "privacy-policy",
     title: "Privacy Policy",

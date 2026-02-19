@@ -87,9 +87,9 @@ export function EarningChart() {
             <Area
               dataKey="desktop"
               type="linear"
-              fill="var(--color-desktop)"
+              fill="var(--color-primary)"
               fillOpacity={0.4}
-              stroke="var(--color-desktop)"
+              stroke="var(--color-primary)"
             />
           </AreaChart>
         </ChartContainer>
