@@ -54,7 +54,7 @@ export default function AdminReportsPage() {
   return (
     <div className="bg-background min-h-screen">
       {/* Top header */}
-      <div className="bg-blue-600 text-white mb-0 rounded-t-lg p-4">
+      <div className="bg-primary text-white mb-0 rounded-t-lg p-4">
         <h1 className="text-xl font-semibold">Reports</h1>
       </div>
 
@@ -107,7 +107,7 @@ export default function AdminReportsPage() {
                   {r.status !== "REVIEWED" && (
                     <button
                       onClick={() => updateStatus(r.id, "REVIEWED")}
-                      className="text-blue-600 hover:underline"
+                      className="text-primary hover:underline"
                     >
                       Mark Reviewed
                     </button>
