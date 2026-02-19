@@ -39,7 +39,7 @@ function sampleDataForYear(year: number) {
 const chartConfig = {
   desktop: {
     label: "Users",
-    color: "var(--chart-1)",
+    color: "var(--chart-2)",
   },
 } satisfies ChartConfig;
 
@@ -55,7 +55,7 @@ export function UserRatio() {
   const chartData = useMemo(() => sampleDataForYear(year), [year]);
 
   return (
-    <Card className="h-full dark:border-[#F4B057]">
+    <Card className="h-full dark:border-primary">
       <CardHeader className="p-4 sm:p-6">
         <div className="flex w-full flex-col items-start justify-between gap-3 sm:flex-row sm:items-center sm:gap-0">
           <div className="min-w-0 flex-1">
@@ -102,7 +102,7 @@ export function UserRatio() {
               className="text-xs sm:text-sm"
             />
             <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
+            <Bar dataKey="desktop" fill="var(--color-primary)" radius={4} />
           </BarChart>
         </ChartContainer>
       </CardContent>
