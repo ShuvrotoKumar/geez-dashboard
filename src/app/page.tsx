@@ -20,12 +20,13 @@ const Dashbaord = () => {
               end={7.8}
               duration={1000}
               decimals={1}
+              prefix="$"
               suffix="k"
               className="mb-1 text-xl font-bold text-[#0D2357] sm:mb-2 sm:text-2xl md:text-3xl lg:text-4xl dark:text-white"
             />
           </p>
           <span className="text-center text-xs font-medium text-[#0D2357] sm:text-sm md:text-base lg:text-lg dark:text-white">
-            Total Distributor
+            Total Revenue
           </span>
         </div>
         <div className="mx-3 h-12 w-px bg-[#F4B057] sm:mx-4 sm:h-14 md:mx-6 md:h-16 lg:mx-8" />
@@ -39,7 +40,7 @@ const Dashbaord = () => {
             />
           </p>
           <span className="text-center text-xs font-medium text-[#0D2357] sm:text-sm md:text-base lg:text-lg dark:text-white">
-            Total Employer
+            Total Users
           </span>
         </div>
       </div>
