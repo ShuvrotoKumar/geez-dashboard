@@ -143,3 +143,5 @@ storybook-static
 *.bak
 *.backup
 *.old
+
+.vercel

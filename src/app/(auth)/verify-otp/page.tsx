@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -7,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft } from "lucide-react";
 
-export default function VerifyOtpPage() {
+function VerifyOtpContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
@@ -173,5 +174,28 @@ export default function VerifyOtpPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="from-primary/10 via-background to-primary/5 relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br p-4">
+      <div className="bg-card/80 border-border/50 rounded-2xl border p-8 shadow-2xl backdrop-blur-xl">
+        <div className="flex flex-col items-center">
+          <div className="mb-4 flex h-20 w-20 items-center justify-center">
+            <div className="bg-muted h-full w-full animate-pulse rounded-lg" />
+          </div>
+          <div className="bg-muted h-8 w-32 animate-pulse rounded" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function VerifyOtpPage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <VerifyOtpContent />
+    </Suspense>
   );
 }
